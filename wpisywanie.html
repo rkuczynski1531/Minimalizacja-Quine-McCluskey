@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wpisywanie</title>
+    <meta charset=utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container col">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <nav>
+            <ul>
+              <li><a href="2zmienne.html">2 zmienne</a></li>
+              <li><a href="3zmienne.html">3 zmienne</a></li>    
+              <li><a href="4zmienne.html">4 zmienne</a></li>
+              <li><a href="5zmienne.html">5 zmiennych</a></li>
+              <li><a href="6zmienne.html">6 zmiennych</a></li>
+            </ul>
+            <ul>
+              <li><a href="wpisywanie.html">Podawanie zbiorów</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <main>
+      <div class="row justify-content-md-center">
+        <div class="col-3-auto">
+            <p>F1 oznacza zbiór argumentów, dla których funkcja przyjmuje wartości "1", a F* zbiór argumentów, dla których funkcja przyjmuje wartości nieokreślone. 
+              Liczby w zbiorach nie mogą się powtarzać. Wprowadzając kolejne liczby należy je oddzielać spacją, czyli np. "1 3 6 10".
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-auto">
+            <label class="F1" for="F1">F1</label>
+            <input type="text" id="F1" oninput="this.value = this.value.replace(/[^0-9\s]/g, '').replace(/(\..*)\./g, '$1');"/>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-auto">
+            <label class="F*" for="F*">F*</label>
+            <input type="text" id="F*"  oninput="this.value = this.value.replace(/[^0-9\s]/g, '').replace(/(\..*)\./g, '$1');"/>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-auto">
+          <input type="button" value="Minimalizuj" id="submit" />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <label class="wynik" for="wynik">Y = </label>
+          <output id="wynik"></output>
+        </div>
+      </div>
+      </main>
+    <script src="skrypt2.js"></script>
+    </div>
+  </body>
+</html>

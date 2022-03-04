@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2 zmienne</title>
+    <meta charset=utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container col">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <nav>
+            <ul>
+              <li><a href="2zmienne.html">2 zmienne</a></li>
+              <li><a href="3zmienne.html">3 zmienne</a></li>    
+              <li><a href="4zmienne.html">4 zmienne</a></li>
+              <li><a href="5zmienne.html">5 zmiennych</a></li>
+              <li><a href="6zmienne.html">6 zmiennych</a></li>
+            </ul>
+            <ul>
+              <li><a href="wpisywanie.html">Podawanie zbiorów</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <main>
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <script>var zmienne = 2;</script>
+          <h3>Tablica prawdy</h3>
+          <table id="tabela">
+            <tr><th class="linia"></th><th>A</th><th class="linia">B</th><th>0</th><th>1</th><th>X</th>
+            <tr><td class="linia" id="dec0">0</td><td >0</td><td class="linia">0</td><td ><input type="radio" name="in0" value="0" checked="checked"></td><td ><input type="radio" name="in0" value="1"></td><td ><input type="radio" name="in0" value="x"></td></tr>
+            <tr><td class="linia" id="dec1">1</td><td >0</td><td class="linia">1</td><td ><input type="radio" name="in1" value="0" checked="checked"></td><td ><input type="radio" name="in1" value="1"></td><td ><input type="radio" name="in1" value="x"></td></tr>
+            <tr><td class="linia" id="dec2">2</td><td >1</td><td class="linia">0</td><td ><input type="radio" name="in2" value="0" checked="checked"></td><td ><input type="radio" name="in2" value="1"></td><td ><input type="radio" name="in2" value="x"></td></tr>
+            <tr><td class="linia" id="dec3">3</td><td >1</td><td class="linia">1</td><td ><input type="radio" name="in3" value="0" checked="checked"></td><td ><input type="radio" name="in3" value="1"></td><td ><input type="radio" name="in3" value="x"></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <input type="button" value="Minimalizuj" id="submit" />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <label class="wynik" for="wynik">Y = </label>
+          <output id="wynik"></output>
+        </div>
+      </div>
+      </main>
+    <script src="skrypt.js"></script>
+    </div>
+  </body>
+</html>
